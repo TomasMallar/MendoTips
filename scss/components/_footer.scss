@@ -1,0 +1,13 @@
+/* Footer */
+.footer {
+   @extend %flex;
+}
+.fot{
+    margin-right: 10px;
+
+    &:hover{   
+        @include prefijos(scale(1.5)); 
+    }
+}
+
+/* Fin Footer */

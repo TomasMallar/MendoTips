@@ -1,0 +1,18 @@
+/* Header */
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;      
+}
+#trans:hover {
+    transition: map-get($transi, transition-transi);
+    @include fontStyle();
+    @include prefijos(scale(1));
+}
+a {
+    color: #9e9e9e;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/* Fin Header */

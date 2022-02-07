@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Meta tag / Frases claves entre 78 a 320 caracteres / 160 caracteres es el ideal -->
+    <meta name="description" content="Pequeñas recomendaciones de un mendocino sobre que podés encontrar en Mendoza, Argentina, para ir a visitar, conocer y disfrutar! Si estás interesado de contactarnos o dejarnos tus opiniones sobre lo conoces de Mendoza o te gustaría concocer!"> <!-- Escribir una descripcion original para cada index -->
+
+    <!-- KW / 18 -->
+    <meta name="keywords" content="Mendoza, vino, bodegas,turismo, montaña, nieve, alojamiento, gastronomía, tips, recomendaciones, Aristides Villanueva, consejos, mendoza capital, viajes "> <!-- palabras sueltas -->
+
+    <!-- Open graph -->
+    <meta property="og:title" content="MendoTips - Recomendaciones de Mendoza"> 
+    <meta property="og:description" content="Pequeñas recomendaciones de un mendocino sobre que podés encontrar en Mendoza, Argentina, para ir a visitar, conocer y disfrutar! Si estás interesado de contactarnos o dejarnos tus opiniones sobre lo que conoces de Mendoza o te gustaría conocer!"> <!-- se pone lo mismo que la descripcion de la pag--> 
+        
+    <!-- favicon -->
+    <link rel="shortcut icon" href="Icono.ico" type="image/x-icon"> 
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title> MendoTips - Recomendaciones de Mendoza </title>
+  </head>
+  <body>
+ 
+        <!-- Header -->
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="logo1">
+                        <a class="navbar-brand" href="index.html"><img class="logo" src="Multimedia/Iconos/Icono.png" alt="logo"></a>
+                    </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse justify-content-end collapse show" id="navbarNav">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a id="trans" class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>                    
+                        <li class="nav-item">
+                            <a id="trans" class="nav-link" aria-current="page" href="quienes.html">Quiénes Somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="trans" class="nav-link" href="turismo.html">Turismo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="trans" class="nav-link" href="gastronomia.html">Gastronomía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="trans" class="nav-link" href="alojamiento.html">Alojamiento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="trans"class="nav-link" href="contactanos.html">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Fin Header -->
+
+        <!-- Section -->
+       <section class="container">
+           <H1 class="cont">CONTÁCTANOS</H1>
+           <form class="row g-3">
+               <!--g-3 hace referencia a grid en bootstrap-->
+                <div class="col-md-6">
+                    <label for="nombre-tex" class="form-label">Nombre</label>
+                    <input type="text" placeholder="Ingrese Nombre" class="form-control" id="nombre-tex">    
+                </div>
+                
+                <div class="col-md-6">
+                    <label for="apellido-tex" class="form-label">Apellido</label>
+                    <input type="text" placeholder="Ingrese Apellido" class="form-control" id="apellido-tex">    
+                </div>
+                
+                
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" placeholder="Ingrese Email"class="form-control" id="inputEmail4" >
+                </div>
+                
+                <div class="col-md-4">
+                    <label  class="form-label">Estado Civil:</label>
+                    <select  class="form-select">
+                        <option selected>Choose...</option>
+                        <option>Soltero/a</option>
+                        <option>Casado/a</option>
+                        <option>Divorciado/a</option></option>
+                    </select>
+                </div>
+            
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Desea recibir el Newsletter
+                        </label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+                    <textarea placeholder="Dejanos un Comentario"class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="col-md-6 text-center my-0">
+                <button type="submit" class="btn btn-primary ">Enviar Formulario</button> 
+                </div>
+                <div class="col-md-6 text-center my-0">
+                    <button type="reset" class="btn btn-primary">Limpiar Formulario</button>
+                </div>
+            </form>    
+         </section>
+
+         <!-- Fin Section -->
+
+        
+
+
+         <!--  Footer  -->
+            <footer class="footer">
+                <!--Cuando tenga páginas modificar links-->
+                <a class="fot" href="https://instagram.com" target="blank">
+                    <img src="Multimedia/Iconos/IgIcono.png" alt="Icono Instagram">
+                </a>
+                <a class="fot" href="https://facebook.com" target="blank">
+                    <img src="Multimedia/Iconos/Fbicono.png" alt="Icono Facebook">
+                </a>
+                <!--Icono de la pág-->
+                <a class="fot" href="index.html"><img src="Multimedia/Iconos/Iconopeque.png" alt="logo"></a>
+                
+            </footer>
+         <!--  Fin Footer -->
+
+
+
+ 
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+/* Mixin */
+
+@mixin prefijos($valor) {
+    transform: $valor;
+ }
+
+  @mixin fontStyle() {     
+    color: #00bfd8;
+    font-size: 18px;
+ }
+
+ @mixin fontStyle2() {
+    color: #fff;
+    outline: 0;
+ }
