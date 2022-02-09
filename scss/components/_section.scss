@@ -38,13 +38,12 @@ p {
     font-family: 'Poppins', sans-serif;
 }
 
-
-.texto{
-    margin: 50px auto;
-}
-
 .sal{
     color: black;
+}
+
+.sal1 {
+    color: rgb(0, 153, 255);
 }
 .cont{
     @extend %flex;

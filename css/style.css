@@ -73,12 +73,12 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
-.texto {
-  margin: 50px auto;
-}
-
 .sal {
   color: black;
+}
+
+.sal1 {
+  color: #0099ff;
 }
 
 .cont {
@@ -87,6 +87,13 @@ p {
 
 /* Fin Sections */
 /* Footer */
+.footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+
 .fot {
   margin-right: 10px;
 }
