@@ -1,5 +1,6 @@
 # MendoTips
 Proyecto MendoTips
+Proyecto desarrollado para aconsejar y recomendar a las personas que quieran visitar, conocer o vivir en Mendoza, lugares que no pueden faltar que vayas!
 <h1 align="center">Hi 👋, I'm Tomas Mallar</h1>
 <h3 align="center">A student engineer systems and front-end developer. This web page is about Mendoza, where I currently live, and I try to show a bit of it.</h3>
 <h3 align="left">Connect with me:</h3>
