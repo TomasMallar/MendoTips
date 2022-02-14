@@ -1,0 +1,106 @@
+/* Reset CSS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Mono:wght@300&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* Mixin */
+/* Extends */
+/* plantilla o class*/
+.footer, .centrado, .cont, .bien, #portada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Map */
+/* Header */
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+#trans:hover {
+  transition: 0.75s;
+  color: #00bfd8;
+  font-size: 18px;
+  transform: scale(1);
+}
+
+a {
+  color: #9e9e9e;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* Fin Header */
+/* Sections */
+#portada {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../Multimedia/Imagenes/portada.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+}
+
+.bien {
+  color: aquamarine;
+}
+.bien:hover, .bien:focus {
+  transition: color 2s ease-out;
+  color: #fff;
+  outline: 0;
+}
+
+.container {
+  margin: 70px;
+}
+
+h1 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 550;
+  text-decoration: none;
+  z-index: 1;
+  margin-right: 30px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.sal {
+  color: black;
+}
+
+.sal1 {
+  color: #0099ff;
+}
+
+.cont {
+  margin: 50px;
+}
+
+/* Fin Sections */
+/* Footer */
+.footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.fot {
+  margin-right: 10px;
+}
+.fot:hover {
+  transform: scale(1.5);
+}
+
+/* Fin Footer */
+
+/*# sourceMappingURL=style.csss.map */
