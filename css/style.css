@@ -85,6 +85,17 @@ p {
   margin: 50px;
 }
 
+/*Promos*/
+.parent {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
 /* Fin Sections */
 /* Footer */
 .footer {
