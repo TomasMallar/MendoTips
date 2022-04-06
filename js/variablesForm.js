@@ -11,7 +11,7 @@ let datosDeInput = ""
 
 
 reset.addEventListener("click", ()=> {
-    Swal.fire({
+    swal({
         title: "¿Realmente desea limpiar los campos de formulario?",
         icon: 'question',
         showCancelButton: true,
@@ -26,7 +26,7 @@ reset.addEventListener("click", ()=> {
 })
 
 submit.addEventListener("click", ()=> {
-    Swal.fire({
+    swal({
         title: "Se envió correctamente",
         icon: 'question',
         showCancelButton: true,

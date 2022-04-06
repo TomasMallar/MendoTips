@@ -8,8 +8,8 @@ const focoEnCampos = ()=> {
     }
 }
 
-btnSubmit.addEventListener("mousemove", ()=> {
-    btnSubmit.title = "Complete los datos antes de pulsar ENVIAR"
+submit.addEventListener("mousemove", ()=> {
+    submit.title = "Complete los datos antes de pulsar ENVIAR"
 })
 
 document.addEventListener("submit", (event)=> {
