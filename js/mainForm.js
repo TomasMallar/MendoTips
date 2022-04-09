@@ -13,9 +13,7 @@ submit.addEventListener("mousemove", ()=> {
 })
 
 document.addEventListener("submit", (event)=> {
-    event.preventDefault()
-    alert("Formulario enviado.")
-    })
+    event.preventDefault()    })
 
 
 inputNombre.addEventListener("keyup", (event)=> {

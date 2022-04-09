@@ -9,10 +9,12 @@ const reset = document.querySelector("#reset")
 
 let datosDeInput = ""
 
+emailjs.send('service_lz0df4j', 'template_89vdnoc', templateParams)
+.then(function (response) {
 
 reset.addEventListener("click", ()=> {
     swal({
-        title: "¿Realmente desea limpiar los campos de formulario?",
+        title: "Formulario Limpio",
         icon: 'question',
         showCancelButton: true,
         confirmButtonText: "Sip",
@@ -26,6 +28,7 @@ reset.addEventListener("click", ()=> {
 })
 
 submit.addEventListener("click", ()=> {
+//    e.preventDefault();
     swal({
         title: "Se envió correctamente",
         icon: 'question',
@@ -39,6 +42,7 @@ submit.addEventListener("click", ()=> {
     })
 
 })
+});
 
 function mensajeToast() {
     Toastify({
