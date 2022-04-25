@@ -1,23 +1,15 @@
-const promos = []
+document.getElementById(consulta).addEventListener('click',consultarJSON);
 
-function agregarPromo() {
-    //debugger
-    let nuevaPromo = {"id": 0, "Promo": "", "Importe": 0.00}
-        nuevaPromo.id = idAutomatico()
-        nuevaPromo.Promo = promosInput.value.trim().toUpperCase()
-        nuevaPromo.Importe = parseFloat(importeInput.value).toFixed(2)
-        promos.push(nuevaPromo)
-        console.clear()
-        console.table(promos)
-        listarPromos() 
-}
-
-function listarPromos() { 
-    detallePromos.innerHTML = ""
-    let filas = ""
-    for (elemento of promos)
-        filas += `<tr><td>${elemento.id}</td><td>${elemento.Promo}</td><td>${elemento.Importe}</td></tr>`
-    detallePromos.innerHTML = filas
-}
-
-const idAutomatico = ()=> parseInt(Math.random() * 10000000)
+function consultarJSON() {
+    fetch('promos.json') 
+    .then(function(res) {
+        return res.json();
+    })
+    .then(function(data){
+        let html = '';
+        data.forEach(function(consulta) {
+        });
+        html+=` <li>${consulta.id}${consulta.promo}${consulta.precio} </li>`
+ })
+ document.getElementById('resultado').innerHTML = html;
+} 

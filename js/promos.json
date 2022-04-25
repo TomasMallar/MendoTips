@@ -1,0 +1,15 @@
+[{
+"id": "promo1",
+"promo": "tour + almuerzo",
+"precio": "$20000"
+}, {
+
+"id": "promo2",
+"promo": "visita a bodega",
+"precio": "$10000"
+}, {
+
+"id": "promo3",
+"promo": "vino + picada",
+"precio": "$5000"
+}]

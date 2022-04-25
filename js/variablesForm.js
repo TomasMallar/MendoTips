@@ -9,8 +9,8 @@ const reset = document.querySelector("#reset")
 
 let datosDeInput = ""
 
-emailjs.send('service_lz0df4j', 'template_89vdnoc', templateParams)
-.then(function (response) {
+// emailjs.send('service_lz0df4j', 'template_89vdnoc', templateParams)
+// .then(function (response) {
 
 reset.addEventListener("click", ()=> {
     swal({
@@ -42,7 +42,7 @@ submit.addEventListener("click", ()=> {
     })
 
 })
-});
+// });
 
 function mensajeToast() {
     Toastify({
