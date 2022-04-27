@@ -10,9 +10,9 @@ function consultarJSON() {
         data.forEach(function(consulta) {
         });
         html+=` <li>${consulta.id}${consulta.promo}${consulta.precio} </li>`
- })
- document.getElementById('resultado').innerHTML = html;
-}
+    })
     .catch (function(error) {
         console.log(error);
-    };
+    }
+//  document.getElementById('resultado').innerHTML = html;
+// };
