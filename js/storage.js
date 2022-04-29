@@ -1,15 +1,33 @@
+const promosArray = []; 
+
 const guardoDatos = ()=> {
-    localStorage.setItem("id", id.value)
-    localStorage.setItem("promo", promo.value)
-    localStorage.setItem("importe", importe.value)
+    
+    fetch('../js/promos.json') 
+    .then(function(res) {
+        return res.json();
+    })
+    .then(function(data){
+        console.log(data)
+        const idArray = document.getElementsByClassName("id");
+        for (ids of idArray){
+             data.forEach(function(element) {
+            if(IDBObjectStore.innerHTML == element.id ) { 
+                let objetoPromo = {id:element.id, promo:element.promo, importe:element.importe }
+                promosArray.push(objetoPromo)
+            }    
+        });
+      }
+      console.log(promosArray)   
+      localStorage.setItem("arrayDePromos", promosArray)
+    })
 }
 
-const recuperoDatos = ()=> {
-    //debugger
-    id.value = localStorage.getItem("id")
-    promo.value = localStorage.getItem("promo")
-    importe.value = localStorage.getItem("importe")
-}
+// const recuperoDatos = ()=> {
+//     //debugger
+//     let id = localStorage.getItem("id")
+//     let promo = localStorage.getItem("promo")
+//     let importe = localStorage.getItem("importe")
+// }
 
 const limpiarLS = ()=> {
     const resp = confirm("¿Realmente desea eliminar los datos almacenados?")
@@ -19,6 +37,7 @@ const limpiarLS = ()=> {
           }
 }
 
+const btnGuardar = document.getElementById("guardar")
+
 btnGuardar.addEventListener("click", guardoDatos)
 
-recuperoDatos()
